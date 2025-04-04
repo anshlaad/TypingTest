@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+<a href="https://forms.gle/3BhNqUWeexqz4R4v7" target="_blank">
+    <button style="position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; background: cyan; color: black; border: none; border-radius: 5px; cursor: pointer;">
+        FEEDBACK
+    </button>
+</a>
+
+
+             <img src="titan.png" alt="Logo" style="width: 100px; height: auto; position: absolute; top: 10px; left: 10px;">
+          
+   <div style="height: 200px; width: 100%; display: flex; align-items: flex-start; justify-content: center;">
+            <h1 style="font-family: Poppins; font-size: 80 px; color: white ; margin :o;">Typing Speed Test</h1>
+</div>
+        </header>
+        
+        <!-- Name input section -->
+        <section id="name-section">
+            <input type="text" id="user-name" placeholder="Enter your name" />
+            <button id="start-btn" onclick="startTest()">Start Test</button>
+
+
+        </section>
+
+        <!-- Test area -->
+        <section class="test-area" style="display: none;">
+            <div class="test-text">
+                <p id="text-to-type">The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <textarea id="user-input" placeholder="Start typing here..." disabled></textarea>
+        </section>
+
+        <section class="test-info">
+            <p style="color: white;  font-size: 20px;">Time Left: <span id="timer">60</span> seconds</p>
+            <p style="color: white;  font-size: 20px;">Words Per Minute (WPM): <span id="wpm">0</span></p>
+            <p style="color: white;  font-size: 20px;">Accuracy: <span id="accuracy">100</span>%</p>
+        </section>
+
+        <section class="controls">
+            <button id="next-btn" onclick="nextParagraph()" style="display: none;">Next Paragraph</button>
+            <button id="new-task-btn" onclick="startNewTask()" style="display: none;">Start New Task</button>
+        </section>
+
+        <!-- Leaderboard section -->
+        <section class="leaderboard">
+            <h2 style="color: white;  font-size: 20px;">Leaderboard</h2>
+            <ul id="leaderboard-list">
+                <!-- Leaderboard will be dynamically populated -->
+            </ul>
+        </section>
+
+       
+<!-- Footer Section -->
+<div class="footer">
+    <p>Created By <a href="https://anshlaad.github.io/portfolio/">Tech Titans</a> | &copy; 2025</p>
+    <p>All rights reserved.</p>
+    
+</div>
+
+     
+
+    <script src="script.js"></script>
+</body>
+</html>

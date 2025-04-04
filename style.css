@@ -1,0 +1,306 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-screen layout */
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    
+    
+}
+
+
+
+/* Background Image */
+body {
+    background-image: url('techi.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Main container to hold everything */
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 70px; /* Adds space below the main container */
+}
+
+/* Title and Subtitle */
+h1 {
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center; /* Center text horizontally */
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px; /* Adds space below the title */
+}        
+
+
+
+/* Typing Test Container */
+.test-area {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px; /* Adds space below the typing area */
+}
+
+.test-area.dark-mode {
+    background-color: rgba(50, 50, 50, 0.8); /* Darker background for dark mode */
+}
+
+#text-to-type {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px; /* Adds space below the paragraph */
+}
+
+/* Input box styling */
+#user-input {
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px; /* Adds space below the input box */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+#user-input:disabled {
+    background-color: #f1f1f1;
+}
+
+/* Centering the input box */
+        
+
+        /* Styling for the input box */
+        input {
+            width: 250px;
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid cyan;
+            border-radius: 5px;
+            outline: none;
+            background: #111;
+            color: white;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+        }
+
+        
+/* Timer, WPM, Accuracy */
+.stats {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px; /* Adds space below the stats section */
+}
+
+.stats .timer, .stats .wpm, .stats .accuracy {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 50px; /* Adds space below buttons */
+}
+
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+#start-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+}
+
+#next-btn {
+    background-color: #ff9800;
+    color: white;
+    display: none;
+}
+
+#next-btn:hover {
+    background-color: #fb8c00;
+}
+
+#new-task-btn {
+    background-color: #2196f3;
+    color: white;
+    display: none;
+}
+
+#new-task-btn:hover {
+    background-color: #1976d2;
+}
+
+
+/* Ensure other elements don't overlap with the button */
+body {
+    padding-top: 60px; /* Add some padding to the top to make space for the button */
+}
+
+}
+
+
+
+/* Leaderboard and User Name Section */
+#name-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Adds space below the name input section */
+}
+
+#user-name {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Adds space below the username input */
+}
+
+/* Leaderboard */
+#leaderboard-list {
+    margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 50px; /* Adds space below leaderboard */
+}
+
+#leaderboard-list li {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode #leaderboard-list li {
+    background-color: rgba(50, 50, 50, 0.7);
+    color: white;
+}
+
+
+
+
+/* Created by and Copyright Section */
+.footer {
+    position: fixed;
+    bottom: 10px; /* Align it 10px from the bottom of the page */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    width: 100%;
+}
+
+.footer a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+body.dark-mode .footer {
+    color: #ccc;
+}
+
+/* Default CSS for large screens (Desktop) */
+body {
+    font-size: 18px;
+}
+
+/* Tablet Screen (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
+/* Mobile Screen (0px - 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+img {
+    max-width: 100%;  /* Image will adjust to screen */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
